@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "509669806742",
+    "project_id": "foodstab-39451",
+    "storage_bucket": "foodstab-39451.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509669806742:android:900f88d774a2896cbd28b7",
+        "android_client_info": {
+          "package_name": "com.example.mppl"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIZmBy3nUx3M0O2P3m3OavvNDR2CNYmXQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
