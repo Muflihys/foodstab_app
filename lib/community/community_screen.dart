@@ -5,11 +5,7 @@ import 'package:mppl/data/data_comunity.dart';
 import 'package:mppl/data/data_images.dart';
 
 class CommunityScreen extends StatefulWidget {
-<<<<<<< HEAD
   const CommunityScreen({super.key});
-=======
-  const CommunityScreen({Key? key}) : super(key: key);
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
 
   @override
   State<CommunityScreen> createState() => _CommunityScreenState();

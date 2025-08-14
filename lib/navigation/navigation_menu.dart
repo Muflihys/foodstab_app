@@ -18,11 +18,7 @@ class NavigationMenu extends StatelessWidget {
             selectedIndex: controller.selectedIndex.value,
             onDestinationSelected: (index) =>
                 controller.selectedIndex.value = index,
-<<<<<<< HEAD
             destinations: const [
-=======
-            destinations: [
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
               NavigationDestination(
                   icon: Icon(Icons.home_outlined), label: 'Home'),
               NavigationDestination(
@@ -39,13 +35,9 @@ class NavigationMenu extends StatelessWidget {
 class NavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
 
-<<<<<<< HEAD
   final screens = [
     const HomeScreen(),
     const CommunityScreen(),
     ProfileScreen()
   ];
-=======
-  final screens = [HomeScreen(), CommunityScreen(), ProfileScreen()];
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
 }

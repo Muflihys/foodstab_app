@@ -3,11 +3,7 @@ import 'package:get/get.dart';
 import 'package:mppl/SignUp/signup_screen.dart';
 
 class LoginFooterWidget extends StatelessWidget {
-<<<<<<< HEAD
   const LoginFooterWidget({super.key});
-=======
-  const LoginFooterWidget({Key? key}) : super(key: key);
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
 
   @override
   Widget build(BuildContext context) {
@@ -24,11 +20,7 @@ class LoginFooterWidget extends StatelessWidget {
               width: 20.0,
             ),
             style: ElevatedButton.styleFrom(
-<<<<<<< HEAD
               backgroundColor: const Color.fromARGB(255, 151, 217, 127),
-=======
-              backgroundColor: Color.fromARGB(255, 151, 217, 127),
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
               side: BorderSide.none,
               shape: const StadiumBorder(),
             ),
@@ -41,11 +33,7 @@ class LoginFooterWidget extends StatelessWidget {
         ),
         const SizedBox(height: 50),
         TextButton(
-<<<<<<< HEAD
           onPressed: () => Get.to(const SignUpScreen()),
-=======
-          onPressed: () => Get.to(SignUpScreen()),
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
           child: Text.rich(
             TextSpan(
                 text: 'Don\'t Have An Account? ',

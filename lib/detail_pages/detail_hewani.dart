@@ -6,11 +6,7 @@ import 'package:mppl/data/data_namapangan.dart';
 import 'cart_page.dart';
 
 class DetailHewani extends StatelessWidget {
-<<<<<<< HEAD
   DetailHewani({super.key});
-=======
-  DetailHewani({Key? key}) : super(key: key);
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
 
   // Mengambil instance CartController
   final CartController cartController = Get.find<CartController>();
@@ -21,11 +17,7 @@ class DetailHewani extends StatelessWidget {
       appBar: AppBar(
         flexibleSpace: Container(
           decoration: BoxDecoration(
-<<<<<<< HEAD
             gradient: const LinearGradient(
-=======
-            gradient: LinearGradient(
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
               colors: [
                 Color(0xFF11A168),
                 Color(0xFF4CEC79),
@@ -33,32 +25,20 @@ class DetailHewani extends StatelessWidget {
               begin: Alignment.bottomCenter,
               end: Alignment.topCenter,
             ),
-<<<<<<< HEAD
             borderRadius: const BorderRadius.only(
-=======
-            borderRadius: BorderRadius.only(
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
               bottomLeft: Radius.circular(28),
               bottomRight: Radius.circular(28),
             ),
             boxShadow: [
               BoxShadow(
                 color: Colors.black.withOpacity(0.25),
-<<<<<<< HEAD
                 offset: const Offset(0, 4),
-=======
-                offset: Offset(0, 4),
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
                 blurRadius: 4,
               ),
             ],
           ),
         ),
-<<<<<<< HEAD
         title: const Text(
-=======
-        title: Text(
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
           'Hewani',
           style: TextStyle(
             fontFamily: "PlusJakartaSans",
@@ -68,11 +48,7 @@ class DetailHewani extends StatelessWidget {
           ),
         ),
         leading: IconButton(
-<<<<<<< HEAD
           icon: const Icon(Icons.arrow_back),
-=======
-          icon: Icon(Icons.arrow_back),
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
           color: Colors.white,
           onPressed: () {
             Get.back();
@@ -80,11 +56,7 @@ class DetailHewani extends StatelessWidget {
         ),
         actions: [
           IconButton(
-<<<<<<< HEAD
             icon: const Icon(Icons.shopping_cart),
-=======
-            icon: Icon(Icons.shopping_cart),
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
             color: Colors.white,
             onPressed: () {
               Get.to(() => CartPage());
@@ -94,11 +66,7 @@ class DetailHewani extends StatelessWidget {
       ),
       body: GridView.builder(
         padding: const EdgeInsets.all(10),
-<<<<<<< HEAD
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-=======
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
           crossAxisCount: 2, // Jumlah kolom dalam grid
           crossAxisSpacing: 10,
           mainAxisSpacing: 10,
@@ -110,11 +78,7 @@ class DetailHewani extends StatelessWidget {
               .panganHewani[index % AppDataPangan.panganHewani.length];
           final imageUrl = AppDataImage
               .hewaniImages[index % AppDataImage.hewaniImages.length];
-<<<<<<< HEAD
           const price = 12000.0; // Contoh harga tetap untuk setiap produk
-=======
-          final price = 12000.0; // Contoh harga tetap untuk setiap produk
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
 
           return Card(
             shape: RoundedRectangleBorder(
@@ -128,11 +92,7 @@ class DetailHewani extends StatelessWidget {
                   flex: 5,
                   child: Container(
                     decoration: BoxDecoration(
-<<<<<<< HEAD
                       borderRadius: const BorderRadius.only(
-=======
-                      borderRadius: BorderRadius.only(
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
                         topLeft: Radius.circular(10),
                         topRight: Radius.circular(10),
                       ),
@@ -152,11 +112,7 @@ class DetailHewani extends StatelessWidget {
                       children: [
                         Text(
                           itemName,
-<<<<<<< HEAD
                           style: const TextStyle(
-=======
-                          style: TextStyle(
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
                             fontFamily: "PlusJakartaSans",
                             fontSize: 14,
                             fontWeight: FontWeight.w400,
@@ -164,30 +120,18 @@ class DetailHewani extends StatelessWidget {
                         ),
                         Text(
                           'Rp. ${price.toStringAsFixed(0)}/kg',
-<<<<<<< HEAD
                           style: const TextStyle(
-=======
-                          style: TextStyle(
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
                             fontFamily: "PlusJakartaSans",
                             fontSize: 12,
                             fontWeight: FontWeight.w300,
                             color: Colors.grey,
                           ),
                         ),
-<<<<<<< HEAD
                         const Spacer(),
                         Align(
                           alignment: Alignment.bottomRight,
                           child: IconButton(
                             icon: const Icon(Icons.add_shopping_cart),
-=======
-                        Spacer(),
-                        Align(
-                          alignment: Alignment.bottomRight,
-                          child: IconButton(
-                            icon: Icon(Icons.add_shopping_cart),
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
                             onPressed: () {
                               cartController.addToCart(
                                   itemName, imageUrl, price);

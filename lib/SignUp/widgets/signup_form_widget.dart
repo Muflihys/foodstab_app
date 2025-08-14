@@ -5,13 +5,8 @@ import 'package:mppl/Login/login_screen.dart';
 
 class SignUpFormWidget extends StatefulWidget {
   const SignUpFormWidget({
-<<<<<<< HEAD
     super.key,
   });
-=======
-    Key? key,
-  }) : super(key: key);
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
 
   @override
   _SignUpFormWidgetState createState() => _SignUpFormWidgetState();
@@ -29,15 +24,9 @@ class _SignUpFormWidgetState extends State<SignUpFormWidget> {
       UserCredential userCredential =
           await _auth.createUserWithEmailAndPassword(
               email: _emailController.text, password: _passwordController.text);
-<<<<<<< HEAD
       ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text('Registration successfull')));
       Get.to(() => const LoginScreen());
-=======
-      ScaffoldMessenger.of(context)
-          .showSnackBar(SnackBar(content: Text('Registration successfull')));
-      Get.to(() => LoginScreen());
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
     } on FirebaseAuthException catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Resgistration failed: ${e.message}')));
@@ -88,20 +77,12 @@ class _SignUpFormWidgetState extends State<SignUpFormWidget> {
               width: double.infinity,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-<<<<<<< HEAD
                   backgroundColor: const Color.fromARGB(255, 151, 217, 127),
-=======
-                  backgroundColor: Color.fromARGB(255, 151, 217, 127),
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
                   side: BorderSide.none,
                   shape: const StadiumBorder(),
                 ),
                 onPressed: _signUp,
-<<<<<<< HEAD
                 child: const Text(
-=======
-                child: Text(
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
                   'Sign Up',
                   style: TextStyle(
                     color: Colors.white,

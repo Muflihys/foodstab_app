@@ -12,11 +12,7 @@ import 'package:mppl/profile/update_profile_screen.dart';
 import 'package:mppl/profile/widgets/profile_menu.dart';
 
 class ProfileScreen extends StatelessWidget {
-<<<<<<< HEAD
   ProfileScreen({super.key});
-=======
-  ProfileScreen({Key? key}) : super(key: key);
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
 
   // Mengambil instance CartController
   final CartController cartController = Get.find<CartController>();
@@ -131,11 +127,7 @@ class ProfileScreen extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () async {
                     await FirebaseAuth.instance.signOut();
-<<<<<<< HEAD
                     Get.offAll(const LoginScreen());
-=======
-                    Get.offAll(LoginScreen());
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
                   },
                   style: ElevatedButton.styleFrom(
                       backgroundColor: const Color.fromARGB(255, 102, 189, 109),

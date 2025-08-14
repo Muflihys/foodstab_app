@@ -3,11 +3,8 @@ import 'package:mppl/data/chart_item.dart';
 
 class CartController extends GetxController {
   var cartItems = <CartItem>[].obs;
-<<<<<<< HEAD
   bool isTesting = false;
   bool isSnackbarOpen = true;
-=======
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
 
   void addToCart(String itemName, String imageUrl, double price) {
     int index = cartItems.indexWhere((item) => item.name == itemName);
@@ -22,7 +19,6 @@ class CartController extends GetxController {
         quantity: 1,
       ));
     }
-<<<<<<< HEAD
     if (!isTesting) {
       Get.snackbar(
         'Berhasil',
@@ -31,14 +27,6 @@ class CartController extends GetxController {
         duration: const Duration(seconds: 2),
       );
     }
-=======
-    Get.snackbar(
-      'Berhasil',
-      '$itemName ditambahkan ke keranjang',
-      snackPosition: SnackPosition.BOTTOM,
-      duration: Duration(seconds: 2),
-    );
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
   }
 
   void removeItem(int index) {

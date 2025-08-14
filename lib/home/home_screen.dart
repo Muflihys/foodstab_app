@@ -3,10 +3,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-<<<<<<< HEAD
-=======
-import 'package:get/get_core/src/get_main.dart';
->>>>>>> 9e945b9e59f46bfe48ed05525d10ed1676943e6a
 import 'package:mppl/contrains/text_strings.dart';
 import 'package:mppl/data/data_comunity.dart';
 import 'package:mppl/data/data_images.dart';
